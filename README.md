@@ -58,29 +58,36 @@ Day 5:
 * YouTube Neural Networks: https://www.youtube.com/watch?v=aircAruvnKk
 * UMN Big Data Astronomy: https://github.com/mcoughlin/ast8581_2021_Spring
 
+### Github
+If you are new to github, we recommend watching:
+* https://www.youtube.com/watch?v=USjZcfj8yxE&ab_channel=ColtSteele
+* https://www.youtube.com/watch?v=nhNq2kIvi9s&ab_channel=ColtSteele
+
 ### Environments
 If running locally, we suggest using anaconda: https://anaconda.org/
+
+If you are on windows, use the windows subsystem for linux:
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+plus the ubuntu anaconda.
+
 After installing anaconda, you should (in a terminal):
  
-(i) clone the repository:
-git clone git@github.com:mcoughlin/ztf_summer_school_2021.git
-(ii) change directories to the repository
-cd ztf_summer_school_2021
-(iii) use conda to create a repository
-on mac osx:
-conda env create -f environment-osx.yml
-on linux:
-conda env create -f environment-ubuntu.yml
+* clone the repository: git clone git@github.com:mcoughlin/ztf_summer_school_2021.git
+* change directories to the repository: cd ztf_summer_school_2021
+* use conda to create a repository
+  * on mac osx: conda env create -f environment-osx.yml
+  * on linux / windows wsl: conda env create -f environment-ubuntu.yml
 
 Activate the environment with:
-source activate ztfsummer
+* source activate ztfsummer
 and can test by opening the first lecture:
-cd lectures/01
-jupyter notebook lecture01.ipynb
+* cd lectures/01
+* jupyter notebook lecture01.ipynb
 
-If you are on windows, I expect windows subsystem for linux:
-https://docs.microsoft.com/en-us/windows/wsl/install-win10
-plus the ubuntu anaconda will work for you. Otherwise, google colaboratory will work:
+Either will, you will need to pip install:
+* pip install git+git://github.com/colcarroll/minimc.git
+
+Otherwise, google colaboratory will work:
 https://colab.research.google.com/
 
 Will need to create an IRSA account for data access:
